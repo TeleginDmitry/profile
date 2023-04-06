@@ -1,0 +1,20 @@
+$color-button: rgba(251, 87, 52, 1);
+$color-disabled: #BBBBBB;
+
+
+.button {
+    padding: 15px 0;
+    border-radius: 8px;
+    background-color: $color-button;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+
+    width: 100%;
+
+
+    &:disabled {
+        background-color: $color-disabled;
+        color: #00000080;
+    }
+}
