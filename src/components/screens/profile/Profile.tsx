@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import styles from './Profile.module.scss'
 import { useFormik } from 'formik'
 import Button from '../../ui/button/Button'
-import { IViewMedia } from 'utils/viewMedia/ViewMedia'
 import ProfileFields from './profileFields/ProfileFields'
 import { IInitialValues } from './Profile.interface'
 import Course from './course/Course'
+import { IViewMedia } from 'hooks/useViewMedia'
 
 const validate = async (values: IInitialValues) => {
 	const errors: Partial<IInitialValues> = {}
