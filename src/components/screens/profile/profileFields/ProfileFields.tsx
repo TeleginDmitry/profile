@@ -7,6 +7,7 @@ import { FormikProps } from 'formik'
 import { IInitialValues } from '../Profile.interface'
 import useViewMedia, { IViewMedia } from 'hooks/useViewMedia'
 import ImagesList from './ImagesList/ImagesList'
+import Button from 'components/ui/button/Button'
 
 interface IProfileFields {
 	formik: FormikProps<IInitialValues>
@@ -70,7 +71,7 @@ const ProfileFields = ({ formik, setPicture, picture }: IProfileFields) => {
 				></ValidateField>
 			</div>
 			<UploadFile onChange={({ target }) => handlerMedia([...target.files])}>
-				<button type='button'>Загрузить файл</button>
+				<Button type='button'>Загрузить файл</Button>
 			</UploadFile>
 
 			<ImagesList picture={picture}></ImagesList>

@@ -3,8 +3,6 @@ import { ICourse } from 'shared/interfaces/course.interface'
 import styles from './Course.module.scss'
 import CourseService from 'services/course.service'
 
-// Тут по хорошему всё вынести, например в компонент CourseList and CourseItem
-
 const Course = () => {
 	const [courseList, setCourseList] = useState<ICourse[]>([])
 

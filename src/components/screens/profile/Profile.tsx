@@ -75,7 +75,6 @@ const Profile = () => {
 			formData.append('picture', picture[0].uploadFile)
 		}
 
-
 		// query
 	}
 
